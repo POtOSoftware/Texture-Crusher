@@ -8,6 +8,5 @@ try:
     resolution = sys.argv[3]
 
     subprocess.call(['ffmpeg', '-i', filename, '-vf', 'scale=' + resolution, outputfilename])
-    os.remove(filename)
 except:
     print("Usage: texturecrusher [input] [output] [WIDTHxHEIGHT]")
